@@ -4,9 +4,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <title>Crystals Collector</title>
 </head>
 <body>
+    <h1 id = "title">Crystals Collector!</h1>
+    <div id= "container">
+        <p id = "instructions"> You will be given a random number at the start of the game.
+            <br>
+            <p> 
+            There are four crystals below. Each time you click on a crystal, you will add a certain
+            amount of points to your total score.
+            </p>
+        
+            <p> 
+            You win the game by matching your total score to the random number. You lose the game
+            if your total score goes above the random number.
+            </p>
+            
+            The value of each crystal is hidden from you until you click on it.
+            <br>
+            Each time the game starts, the values of the crystals will change.
+         
+        </p>
+    </div>
+
+    <div id = "targetNumber">
+        ##
+        
+
+    </div>
     
+    <div id = "winLossTracker">
+    <strong>Wins: </strong><span id = "wins"> </span>
+        <br>
+        <br>
+        <strong>Losses: </strong><span id = "losses"> </span>
+    </div>
+
+    <div id = "crystals">
+
+        <img class ="crystalOne crystal-image" src = "assets/images/diamond-417896_640.png" alt = "c1">
+        <img class ="crystalTwo crystal-image" src = "assets/images/gems-44532_640.png" alt = "c2">
+        <img class ="crystalThree crystal-image" src = "assets/images/amethyst-153687_640.png" alt = "c3">
+        <img class ="crystalFour crystal-image" src = "assets/images/blue-576241_640.png" alt = "c4">
+
+    </div>
+    
+    <h2>Your total score is:</h2>
+    <div id = "scoreboard">
+        
+        ##
+    </div>
+  <!-- JAVASCRIPT  -->
+  <!-- ========================================= -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <script src = "assets/javascript/game.js">
+  </script>  
 </body>
 </html>
