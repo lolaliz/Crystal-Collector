@@ -77,48 +77,50 @@ $(document).ready(function() {
 
        function WinsLosses() {
           if (counter === targetNumber) {
-              $("#wins").text(wins);
-              resetNumbers();
-              $("#scoreboard").empty(counter);
               wins++
+              $("#wins").text(wins);
+              $("#scoreboard").empty(counter);
+              resetNumbers();
 
           }
       
           else if (counter >= targetNumber) {
               $("#scoreboard").empty(counter);
-              resetNumbers();
               losses++
               $("#losses").text(losses);
+              //$("#winLossTracker").html("Lost!");
+              resetNumbers();
+
           }
+        }
 
           
-        }
 
         function resetNumbers(){
            
             
-            var targetNumber = Math.floor(Math.random() * 120) + 19;
+         targetNumber = Math.floor(Math.random() * 120) + 19;
             
-            var crystalOneNumber = Math.floor(Math.random() * 12) +1; 
+             crystalOneNumber = Math.floor(Math.random() * 12) +1; 
             console.log("c1 value = " + crystalOneNumber)
-            var crystalTwoNumber = Math.floor(Math.random() * 12) +1;
+             crystalTwoNumber = Math.floor(Math.random() * 12) +1;
             console.log("c2 value = " + crystalTwoNumber)
-            var crystalThreeNumber = Math.floor(Math.random() * 12) +1;
+             crystalThreeNumber = Math.floor(Math.random() * 12) +1;
             console.log("c3 value = " + crystalThreeNumber)
-            var crystalFourNumber = Math.floor(Math.random() * 12) +1;
+             crystalFourNumber = Math.floor(Math.random() * 12) +1;
             console.log("c4 value = " + crystalFourNumber)
     
    
-            var counter = 0;
+            counter = 0;
 
              $("#targetNumber").text(targetNumber);
              $("#scoreboard").text(counter);
+            }
    
             
            
     
               
-            }
     
     
 
